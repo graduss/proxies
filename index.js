@@ -42,7 +42,8 @@ module.exports = function (path) {
       } catch (e) {
         return null;
       }
-    }).filter((p) => p));
+    }).filter((p) => p))
+    .catch((e) => []);
   }
 
   return {
